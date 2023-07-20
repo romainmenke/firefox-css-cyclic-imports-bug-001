@@ -1,11 +1,26 @@
 # Repro
 
-steps :
+## Structure
+
+`./test.mjs` is the main driver:
+- starts a browser instance through puppeteer
+- lists folders with tests
+- collects results
+
+`./util/test.mjs` is a helper to run a single test:
+- start a dev server
+- visit a page
+- check if expectations are met
+
+`./tests/cycles` contains test resources.
+
+## Steps
+
 - read contents of `package.json`
 - run `npm run install:with-firefox`
 - run `npm run test.mjs`
 
-This will :
+this will :
 - setup puppeteer with Firefox.
 - run the tests found under `./tests/cycles`.
 
