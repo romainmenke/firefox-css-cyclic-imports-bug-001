@@ -1,0 +1,22 @@
+{
+  "name": "firefox-css-cyclic-imports-bug-001",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "test": "node ./test.mjs",
+    "install:with-firefox": "PUPPETEER_PRODUCT=firefox npm rebuild puppeteer"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/romainmenke/firefox-css-cyclic-imports-bug-001.git"
+  },
+  "author": "Romain Menke",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/romainmenke/firefox-css-cyclic-imports-bug-001/issues"
+  },
+  "homepage": "https://github.com/romainmenke/firefox-css-cyclic-imports-bug-001#readme",
+  "dependencies": {
+    "puppeteer": "^20.8.2"
+  }
+}
