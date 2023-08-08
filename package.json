@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "test": "node ./test.mjs",
+    "serve": "http-server",
     "install:with-firefox": "PUPPETEER_PRODUCT=firefox npm rebuild puppeteer"
   },
   "repository": {
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/romainmenke/firefox-css-cyclic-imports-bug-001#readme",
   "dependencies": {
-    "puppeteer": "^20.8.2"
+    "puppeteer": "^20.8.2",
+    "http-server": "^14.1.1"
   }
 }

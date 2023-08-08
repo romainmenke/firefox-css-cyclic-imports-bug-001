@@ -16,6 +16,8 @@
 
 ## Steps
 
+### With puppeteer
+
 - read contents of `package.json`
 - run `npm run install:with-firefox`
 - run `npm run test.mjs`
@@ -24,9 +26,17 @@ this will :
 - setup puppeteer with Firefox.
 - run the tests found under `./tests/cycles`.
 
-The tests will always see a red box.
+The tests will always show a red box.
 
-## Manual checks :
+### With a web server
+
+- read contents of `package.json`
+- run `npm run serve`
+- visit `http://127.0.0.1:8080/tests/cycles/006/` (or whatever port was assigned)
+
+The tests will always show a red box.
+
+### As a file
 
 Each folder also contains an `index.html` file.  
 You can open this in any browser.
